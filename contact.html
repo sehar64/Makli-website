@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKLI THATTA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+               .navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: background-color 0.4s ease, box-shadow 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 10px 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ffc107;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+        @media (max-width: 991.98px) {
+            .navbar-toggler {
+                border: none;
+                background: transparent;
+            }
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            background-color:bisque; 
+        }
+       
+        .navbar-nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px 0;
+            transition: 0.3s;
+        }
+        .navbar-nav a:hover {
+            color: #ffc107;
+            padding-left: 10px;
+        }
+       
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color:#0d3b66;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-cover">
+        <div class="overlay"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Makli Thatta</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="places.html">Places to visit</a></li>
+                        <li class="nav-item"><a class="nav-link" href="food.html">Restaurants & Food</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="things.html">Things to Do</a></li>
+                        <li class="nav-item"><a class="nav-link" href="travel.html">Travel Guide</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container my-5">
+            <h2 class="text-center mb-4"><strong>Contact Us</strong></h2>
+            <p class="text-center fw-bold fs-5">Get in touch with us for more details about Makli Thatta.</p>
+
+            
+            <div class="row">
+                <!-- Contact Info Section -->
+                <div class="col-md-6">
+                    <h4>Our Office</h4>
+                    <p><strong>📍 Address:</strong> Makli, Thatta, Sindh, Pakistan</p>
+                    <p><strong>📞 Phone:</strong> +92-XXX-XXXXXXX</p>
+                    <p><strong>📧 Email:</strong> info@maklithatta.com</p>
+                    <p><strong>🕒 Office Hours:</strong> Mon - Sat (9:00 AM - 6:00 PM)</p>
+                    
+                    <h4>Follow Us</h4>
+                    <p>
+                        <a href="https://www.facebook.com/share/18TJE1Ezw4/" target="_blank">🌐 Facebook</a> | 
+                        <a href="https://www.instagram.com/maklithatta?igsh=aW5ydGo0Z29qZmh5" target="_blank">📷 Instagram</a> | 
+                        <a href="https://youtu.be/G0e-XSfwqjg?si=8oGqgnVuY9OQQ_01" target="_blank">🎥 YouTube</a>
+                    </p>
+                </div>
+        
+                <!-- Contact Form Section -->
+                <div class="col-md-6">
+                    <h4>Send Us a Message</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer bg-dark text-white text-center py-3">
+            <div class="container">
+                <p>&copy; 2025 Makli Thatta Travel. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+    </html>
+        

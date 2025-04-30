@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKLI THATTA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+       .navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: background-color 0.4s ease, box-shadow 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 10px 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ffc107;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+        @media (max-width: 991.98px) {
+            .navbar-toggler {
+                border: none;
+                background: transparent;
+            }
+        }
+         body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            background-color:bisque; 
+            
+        }
+        
+        .heading {
+            text-align: center;
+            margin: 20px 0;
+            color: #0d3b66;
+        }
+        .grid-container {
+            padding: 20px;
+        }
+        .grid-item img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+       
+        .navbar-nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px 0;
+            transition: 0.3s;
+        }
+        .navbar-nav a:hover {
+            color: #ffc107;
+            padding-left: 10px;
+        }
+        
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color:#0d3b66;
+            transition: 0.3s;
+        }
+        h1{
+            text-align: center;
+            padding-left: 20px;
+        }
+        h2{
+            text-align: left;
+            font-style: italic;
+            padding-left: 20px;
+        }
+        h3{
+            text-align: left;
+            color: black;
+            padding-left: 20px;
+            font-weight: 400;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="bg-cover">
+        <div class="overlay"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Makli Thatta</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="places.html">Places to visit</a></li>
+                        <li class="nav-item"><a class="nav-link" href="food.html">Restaurants & Food</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="things.html">Things to Do</a></li>
+                        <li class="nav-item"><a class="nav-link" href="travel.html">Travel Guide</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+    <div class="heading">
+        <h1><strong>MAKLI,THATTA</strong></h1>
+        <h2>The Historical Monuments at Makli, Thatta comprise a monumental necropolis that reflects the Sindh civilization.</h2>
+        <br>
+        <h3>Thatta was the capital of the southern region of Sindh from the 14th to the 18th centuries. On its Makli Hill, one of the largest necropolises in the world with over half a million tombs and graves was built. Different architectural styles were used and some of the stone tombs are lavishly decorated with glazed tiles.</h3>
+    </div>
+    <hr>
+    <div class="container grid-container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://img.freepik.com/premium-photo/makli-necropolis-vintage-tombs-thatta-pakistan_134785-19410.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h3>MAKLI NECROPOLIS</h3>
+                <p>For years together, we have read and heard about the numerous magnificent tombs and burial sites that are sprawled across the globe. However, one such site that has remained rather under covers, and hidden from the public eye, is the vast necropolis of Makli. In the heart of the Pakistani province of Sindh, lies its medieval capital – Thatta, popularly known as ‘The City of the Dead’ or the ‘The City of Silence’. The reason behind this is that approximately 6 kilometers away from this city, lies the world’s largest funerary site called – Makli Necropolis. Located in the town of Makli, it is spread over an area of 10 kilometers and houses an estimate of 500,000 to 1 million tombs which have been built over a period of around 400 years. Yet, this beautiful site has remained tucked away in the quiet town of Makli, with very few having even heard of its existence. Scroll down to immerse yourself in the magnificent and tranquil world of the – Makli Necropolis!</p>
+            </div>
+        </div>
+        
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2">
+                <img src="https://www.discoverwalks.com/blog/wp-content/uploads/2022/09/1280px-pk_thatta_asv2020-02_img14_makli_necropolis.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h3>HISTORY</h3>
+                <p>Makli Necropolis lies on a vast plateau, just outside the city of Thatta. The word ‘necropolis’ in Greek means ‘a large, designed cemetery with elaborate tomb monuments.’ However, there are various stories about how the place got the name ‘Makli’. The first one says that the name was given by a Sufi saint who had heard the story of a Hajj pilgrim who had experienced a ‘deep spiritual experience’, at the site. He then said that this place was like his own little ‘Makkah’ (Mecca). Mecca happens to be the holiest site for Muslims, and so this place was given the name ‘Makli Necropolis’, by the venerated Sufi Saint. Another legend narrates the story of a holy woman named ‘Mai Makli’ who had her prayers answered by God. It was because of her, that the Sultan of the Turkish Tughlaq Dynasty, Firoz Shah Tughlaq, was not able to conquer the city of Thatta. It is believed that she was buried in Makli without a headstone or marker of any kind. And therefore, the name – Makli Necropolis.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="http://i.dawn.com/2012/10/c-makli-photos-5-of-40.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h3>CALLIGRAPHY ON GRAVE</h3>
+                <p>However, evidence suggests that the very first burial in Makli took place only around the 14th century. Shaikh Jamali, a Sufi saint, poet and scholar established khanqah or a Sufi gathering site at Makli. After his death, he was buried in Makli itself. Jam Tamachi, the then ruler of the province of Sindh, revered the saint a lot. After hearing about the saint’s burial in the area of Makli Necropolis, the ruler decided to make arrangements for his burial in an area close to the saint’s. It did not take long for other prominent people of the Sufi/Islamic religion to fix their burial spot in the holy area of the Makli Necropolis. It was during the Samma Dynasty, which interestingly, was a Rajput Dynasty ruling the Indian subcontinent, and parts of Punjab, Kutch and Balochistan, that this funerary site reached its peak. The reason behind this is that the capital of the Samma Dynasty was placed very close to the city of Thatta. As a result, whenever a King or any prominent saint/minister of the Samma’ Dynasty passed away, the arrangements for their burial were made in Makli Necropolis, itself. The maximum number of tombs in Makli belong to the Samma Dynasty.</p>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.MZGPSv-27CUKgsQsRz4EcgHaFv&pid=Api&P=0&h=220" class="img-fluid" style="width: 600px; height: 350px;">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h3>THE TOMB OF ISA KHAN HUSSAIN</h3>
+                <p>As mentioned before, the entire area of Makli Necropolis houses around 500,000 to 1 million tombs. Meaning that people from across different eras and dynasties have been buried here. However, there are certain tombs which stand-out due to their architectural significance. Most of these tombs belong to the Mughal Dynasty. An example of a Mughal tomb that can be found in Makli, is the tomb of Diwan Shurfa Khan, who was the minister of state, in the Mughal Empire. All of the tombs that belong to the Mughal Era are dated between 1570 A.D. and 1640 A.D. In fact, very close to the Makli Necropolis, in the city of Thatta itself, you will find a mosque named ‘Shah Jahan Mosque’. As the name suggests, this mosque was built by the Mughal Emperor Shah Jahan in the 16th century. When you first look at it, the mosque seems so radiant, unlike any other Mughal-constructed mosques. The colour blue, has extensively been used in its construction, and this is probably what gives it it’s unique look.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/07/18/e6/4c/shah-jahan-mosque.jpg" class="img-fluid" style=" width: 500px; height: 300px;">
+            </div>
+            <div class="col-md-6">
+                <h3>THE SHAHJAHAN MOSQUE</h3>
+                <p>The most fascinating aspect of Makli Necropolis is that the tombs in the area have a mixed style of architecture. The tombs are designed in a peculiar architectural style known as the ‘Chaukhandi’ style. Basically, this style incorporates designs from the Muslim, Hindu, Persian, Mughal, and Gujarati styles. And if you remember well, majority of the tombs in Makli belong to the Samma Dynasty, which was a medieval Rajput Dynasty. A combination of such diverse architecture has given rise to some of the most beautiful tombs from the medieval ages. One very important characteristic of these tombs (that is the Chaukhandi style), is that they consist of large slabs of sandstone, which have been decorated with different shapes and colours or motifs. You will notice Jain-styled designs, with blue colours on these tombs, just like the ones in the Shah Jahan mosque.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Tomb_of_Sultan_Jam_Nizamuddin.jpg/330px-Tomb_of_Sultan_Jam_Nizamuddin.jpg" class="img-fluid" style="width: 500px; height: 500px;">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h3>THE TOMB OF JAM NIZAMUDDIN II</h3>
+                <p> Jám Nizámuddín II was the 15th Sultan of Sindh from Samma dynasty between 1461 and 1508 CE. His capital was Thatta in modern-day southern Pakistan. After his death, his son Jám Ferózudin lost the Sultanate in 1525 CE to an invading army of Shah Beg Arghun,[2] who had been thrown out of Kandahar by Babur.Nizamuddin's grave is located on Makli Hill and part of the world heritage site of Historical Monuments at Makli.[3] The tomb is an impressive stone structure with fine ornamental carving similar to the 15th-century Gujrat style.[4] It has been restored but suffers from cracks and wall distortions caused by rough weathering and erosion of the slope on which it stands.His tomb is in the necropolis on Makli Hill. It is square in the plan but the dome was never constructed, work stopped when the walls reached the springing line. On the exterior of the building there are twelve bands of decoration running around the building from top to bottom comprising diamonds, lotuses, Quranic inscriptions, and geometric patterns. There are two unusual features: the mihrab in the interior and the corresponding balcony on the exterior. This type of balcony recalls those in Gujarat therefore it is possible that craftsmen from Gujarat were responsible for this tomb. This is a close view of a section of the wall, showing the richly carved balcony and the bands of decorative carving along the wall.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <footer class="footer bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Makli Thatta Travel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

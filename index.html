@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKLI THATTA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            background-color: #e6dac5;
+        }
+
+        .bg-cover {
+            background: url('https://media-cdn.tripadvisor.com/media/photo-c/1280x250/0b/0b/d7/f0/makli-hill.jpg') no-repeat center center/cover;
+            height: 100vh;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .main-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        .explore-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color:#562482;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .explore-btn:hover {
+            background-color: rgb(7, 7, 87);
+        }
+
+        .card-section {
+            padding: 4rem 0;
+            background-color: #f0f0f0;
+            width: 100%;
+        }
+
+        .card {
+            transition: transform 0.3s;
+            border: none;
+            background-color: #39a2b7;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+        .navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: background-color 0.4s ease, box-shadow 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 10px 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ffc107;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+        @media (max-width: 991.98px) {
+            .navbar-toggler {
+                border: none;
+                background: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-cover">
+        <div class="overlay"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Makli Thatta</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="places.html">Places to visit</a></li>
+                        <li class="nav-item"><a class="nav-link" href="food.html">Restaurants & Food</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="things.html">Things to Do</a></li>
+                        <li class="nav-item"><a class="nav-link" href="travel.html">Travel Guide</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container d-flex flex-column align-items-center justify-content-center" style="height: 80vh;">
+            <div class="main-content text-center">
+                <h1 class="display-3">MAKLI THATTA</h1>
+                <h2>Explore the Historical Wonders of Thatta</h2>
+                <button class="explore-btn" onclick="document.getElementById('cards').scrollIntoView({behavior: 'smooth'});">Explore Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid card-section" id="cards">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/01/b0/0a/makli-hill.jpg" alt="Why Visit" class="img-fluid">
+                    <div class="p-3">
+                        <h3>Why Visit</h3>
+                        <p>Discover the unique history and culture of Makli Thatta.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.vN-shd-JK3r4ufDBvDZSJQHaEK&pid=Api&P=0&h=220" alt="Top Attractions" class="img-fluid">
+                    <div class="p-3">
+                        <h3>Top Attractions</h3>
+                        <p>Explore the most iconic spots of the region.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.b7q05BU9KWf9XaxbWT3eYgHaEK&pid=Api&P=0&h=220" alt="Foods" class="img-fluid">
+                    <div class="p-3">
+                        <h3>Foods</h3>
+                        <p>Find the best places to stay for your visit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Makli Thatta Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+           

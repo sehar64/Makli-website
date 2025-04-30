@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKLI THATTA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+               .navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: background-color 0.4s ease, box-shadow 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 10px 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ffc107;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+        @media (max-width: 991.98px) {
+            .navbar-toggler {
+                border: none;
+                background: transparent;
+            }
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            background-color: bisque; 
+        }
+        
+        
+        .navbar-nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px 0;
+            transition: 0.3s;
+        }
+        .navbar-nav a:hover {
+            color: #ffc107;
+            padding-left: 10px;
+        }
+        
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color:#0d3b66;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<div class="bg-cover">
+    <div class="overlay"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Makli Thatta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="places.html">Places to visit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">Restaurants & Food</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="things.html">Things to Do</a></li>
+                    <li class="nav-item"><a class="nav-link" href="travel.html">Travel Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <section class="container mt-5">
+            <h2 class="text-center mb-4">Things to Do in Makli Thatta</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4>1. Explore the Makli Necropolis</h4>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.8fmARlhWsuLPZGveCYt-tAHaEK&pid=Api&P=0&h=220" height="1000px" width="500px" class="img-fluid rounded" alt="Makli Necropolis">
+                    <p>🕌 Walk through one of the world’s largest graveyards, discovering intricately designed tombs and centuries-old history.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>2. Photography at Shah Jahan Mosque</h4>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.TOI98LQOXtitZ12W1B1rCAHaE8&pid=Api&P=0&h=220" height="500px" width="500px" class="img-fluid rounded" alt="Shah Jahan Mosque">
+                    <p>📸 Capture the mesmerizing blue-tiled architecture of this Mughal masterpiece, known for its stunning acoustics.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>3. Sunset at Keenjhar Lake (Kalri Lake)</h4>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.tBz44l_-5ReqscldN20QPwHaFj&pid=Api&P=0&h=220" height="500px" width="500px" class="img-fluid rounded" alt="Keenjhar Lake">
+                    <p>🌅 Enjoy a breathtaking sunset at this serene lake, go for a boat ride, or relax by the shore with traditional Sindhi food.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>4. Discover the Ruins of Banbhore</h4>
+                    <img src="https://thekarachiwalla.com/wp-content/uploads/2012/02/dsc_0114.jpg" class="img-fluid rounded" alt="Banbhore Ruins">
+                    <p>🏛️ Walk through the remains of an ancient city believed to be the site where Muhammad Bin Qasim entered Sindh.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>5. Visit the Sacred Shrines</h4>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.Obt0obtjCbPHTQaV9_AnhwHaE8&pid=Api&P=0&h=220" height="500px" width="500px" class="img-fluid rounded" alt="Shrines in Thatta">
+                    <p>🕋 Pay respects at the shrines of Sufi saints like Pir Patho and Jhok Sharif, experiencing the spiritual essence of Thatta.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>6. Experience Sindhi Culture in Thatta Bazaar</h4>
+                    <img src="https://i.ytimg.com/vi/TdXf9R7lUwg/maxresdefault.jpg" class="img-fluid rounded" alt="Sindhi Bazaar">
+                    <p>🛍️ Shop for traditional Sindhi Ajrak, handicrafts, and local sweets at the bustling Thatta market.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>7. Bird Watching at Keenjhar Lake</h4>
+                    <img src="https://i.tribune.com.pk/media/images/1057995-Birdscopycopy-1456937826/1057995-Birdscopycopy-1456937826.JPG" class="img-fluid rounded" alt="Bird Watching">
+                    <p>🦆 Spot migratory birds and unique wildlife at one of Sindh’s most important bird sanctuaries.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>8. Explore the Abandoned Kalan Kot Fort</h4>
+                    <img src="https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2020/01/9.jpg" class="img-fluid rounded" alt="Kalan Kot Fort">
+                    <p>🏰 Walk through the ruins of this ancient fort, once a strategic military stronghold in Sindh.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>9. Try Local Sindhi Cuisine</h4>
+                    <img src="https://khappa.pk/wp-content/uploads/2018/10/kakdi-1024x768.jpg" class="img-fluid rounded" alt="Sindhi Cuisine">
+                    <p>🍛 Enjoy authentic Sindhi dishes like Sindhi Biryani, Saag, and Machli (fish) at local dhabas.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>10. Attend a Local Festival or Mela</h4>
+                    <img src="https://i.ytimg.com/vi/xQhn9pSC-kU/hqdefault.jpg" class="img-fluid rounded" alt="Sindhi Festival">
+                    <p>🎶 Experience the vibrant colors, folk music, and traditional dances at cultural events held in and around Thatta.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer bg-dark text-white text-center py-3">
+            <div class="container">
+                <p>&copy; 2025 Makli Thatta Travel. All rights reserved.</p>
+            </div>
+        </footer>
+        
+    </body>
+    </html>        
+
