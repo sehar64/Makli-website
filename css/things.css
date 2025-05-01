@@ -1,0 +1,89 @@
+.navbar {
+background-color: rgba(0, 0, 0, 0.6);
+backdrop-filter: blur(10px);
+box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+transition: background-color 0.4s ease, box-shadow 0.3s ease;
+position: sticky;
+top: 0;
+z-index: 999;
+padding: 10px 20px;
+}
+
+.navbar-nav {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.navbar-nav .nav-link {
+color: white;
+margin: 0 12px;
+text-decoration: none;
+position: relative;
+opacity: 0;
+animation: fadeIn 0.8s forwards;
+}
+
+.navbar-nav .nav-link:hover {
+color: #ffc107;
+}
+
+.navbar-nav .nav-link::after {
+content: '';
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 0%;
+height: 2px;
+background-color: #ffc107;
+transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+width: 100%;
+}
+
+@keyframes fadeIn {
+to {
+opacity: 1;
+}
+}
+
+@media (max-width: 991.98px) {
+.navbar-toggler {
+ border: none;
+ background: transparent;
+}
+}
+body, html {
+height: 100%;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+scroll-behavior: smooth;
+background-color: bisque; 
+}
+
+
+.navbar-nav a {
+color: white;
+text-decoration: none;
+display: block;
+padding: 8px 0;
+transition: 0.3s;
+}
+.navbar-nav a:hover {
+color: #ffc107;
+padding-left: 10px;
+}
+
+.bar {
+width: 30px;
+height: 3px;
+background-color:#0d3b66;
+transition: 0.3s;
+}
