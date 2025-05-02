@@ -1,0 +1,173 @@
+  body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      background-color: #e6dac5;
+  }
+
+  .bg-cover {
+      background: url('https://media-cdn.tripadvisor.com/media/photo-c/1280x250/0b/0b/d7/f0/makli-hill.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+      animation: fadeIn 1.5s ease-in;
+  }
+
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      animation: overlayFade 2s ease-in-out;
+  }
+
+  .main-content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+      animation: slideUp 1s ease-out;
+  }
+
+  .explore-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color:#562482;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      animation: bounceIn 1s ease;
+  }
+
+  .explore-btn:hover {
+      background-color: rgb(7, 7, 87);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  .card-section {
+      padding: 4rem 0;
+      background-color: #f0f0f0;
+      width: 100%;
+      animation: fadeInUp 1s ease;
+  }
+
+  .card {
+      transition: all 0.4s ease;
+      border: none;
+      background-color: #39a2b7;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      animation: cardAppear 0.8s ease-out;
+  }
+
+  .card:hover {
+      transform: scale(1.05) translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  }
+
+  .navbar {
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transition: all 0.4s ease;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      padding: 10px 20px;
+      animation: slideDown 0.8s ease;
+  }
+
+  .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+
+  .navbar-nav .nav-link {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      position: relative;
+      opacity: 0;
+      animation: fadeIn 0.8s forwards;
+      transition: all 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+      color: #ffc107;
+      transform: translateY(-2px);
+  }
+
+  .navbar-nav .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #ffc107;
+      transition: width 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover::after {
+      width: 100%;
+  }
+
+  @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+  }
+
+  @keyframes bounceIn {
+      0% { transform: scale(0.3); opacity: 0; }
+      50% { transform: scale(1.05); }
+      70% { transform: scale(0.9); }
+      100% { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes cardAppear {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes overlayFade {
+      from { background-color: rgba(0, 0, 0, 0); }
+      to { background-color: rgba(0, 0, 0, 0.5); }
+  }
+
+  @keyframes fadeInUp {
+      from { 
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  @media (max-width: 991.98px) {
+      .navbar-toggler {
+          border: none;
+          background: transparent;
+      }
+  }
