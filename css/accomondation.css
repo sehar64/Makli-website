@@ -1,0 +1,200 @@
+/* Enhanced Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 12px 24px;
+    animation: slideDown 0.8s ease-out;
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    animation: fadeInUp 1s ease-out;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards, float 3s ease-in-out infinite;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+    transform: translateY(-3px);
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ffc107;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        border: none;
+        background: transparent;
+        transition: transform 0.3s ease;
+    }
+    
+    .navbar-toggler:hover {
+        transform: scale(1.1);
+    }
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: bisque;
+    transition: background-color 0.5s ease;
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    transition: all 0.4s ease;
+}
+
+.navbar-nav a:hover {
+    color: #ffc107;
+    padding-left: 15px;
+    transform: scale(1.05);
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #0d3b66;
+    transition: all 0.4s ease;
+    margin: 6px 0;
+}
+
+.bar:hover {
+    transform: scaleX(1.2);
+}
+
+.banner {
+    background: url('https://i.pinimg.com/736x/81/36/da/8136da9431f22e17b947dca6fefb6d07.jpg') no-repeat center center/cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+    animation: bannerZoom 20s infinite alternate;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.hotel h4 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.hotel p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    animation: slideInRight 0.8s ease-out;
+}
+
+h3 {
+    text-align: center;
+    animation: bounce 1s ease-out;
+}
+
+@keyframes bannerZoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+@keyframes pulse {
+    0% { opacity: 0.3; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0.3; }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
